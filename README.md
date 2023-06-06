@@ -5,6 +5,21 @@ To Implement Transfer Learning for CIFAR-10 dataset classification using VGG-19 
 ## Problem Statement and Dataset
 To use the pre-trained VGG19 model on the ImageNet dataset and fine-tune it on the CIFAR-10 dataset. The goal is to achieve high accuracy on the CIFAR-10 dataset by leveraging the knowledge learned from the ImageNet dataset. The main challenge is to adapt the pre-trained model to the new dataset while avoiding overfitting and achieving high accuracy
 
+The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images.
+
+The dataset is divided into five training batches and one test batch, each with 10000 images. The test batch contains exactly 1000 randomly-selected images from each class. The training batches contain the remaining images in random order, but some training batches may contain more images from one class than another. Between them, the training batches contain exactly 5000 images from each class.
+the datasetcontains 10 random images of:
+airplane										
+automobile										
+bird										
+cat										
+deer										
+dog										
+frog										
+horse										
+ship										
+truck
+
 ## DESIGN STEPS
 ### STEP 1:
 Import the required libraries and load the dataset
