@@ -98,7 +98,11 @@ metrics[['accuracy','val_accuracy']].plot()
 ```
 #### Creating Classification report and confusion matrix
 ```
+x_test_predictions = np.argmax(model.predict(x_test), axis=1)
 
+print(confusion_matrix(y_test,x_test_predictions))
+
+print(classification_report(y_test,x_test_predictions))
 
 ```
 ## OUTPUT
